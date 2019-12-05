@@ -16,6 +16,5 @@ public class Main {
         User user = UserUtil.requireInputsAndLogin(3, true);
         System.out.println("Hello, " + user.getUsername());
         MenuUtil.showMenuInfinite();
-
     }
 }
