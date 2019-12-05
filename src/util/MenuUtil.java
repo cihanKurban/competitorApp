@@ -37,7 +37,7 @@ public class MenuUtil {
             } else if (selectedMenu == 5) {
                 CompetitionUtil.printCompetitors();
             } else if (selectedMenu == 6) {
-                UserUtil.requireInputsAndLogin(3, true);
+                CompetitionUtil.logout();
             }
         }
     }

@@ -100,4 +100,7 @@ public class CompetitionUtil {
         
         Config.setCompetitors(competitorsNew);
     }
+    public static void logout(){
+        System.out.println("You are logged out");
+    }
 }
