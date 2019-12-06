@@ -23,8 +23,9 @@ public class MenuUtil {
         }
     }
 
-    public static int showMenuInfinite() {
-        while (true) {
+    public static void showMenuInfinite() {
+        boolean loop = true;
+        while (loop) {
             int selectedMenu = showMenu();
             if (selectedMenu == 1) {
                 CompetitionUtil.registerCompetitorsAndShowInfo();
@@ -38,6 +39,7 @@ public class MenuUtil {
                 CompetitionUtil.printCompetitors();
             } else if (selectedMenu == 6) {
                 CompetitionUtil.logout();
+                loop = false;
             }
         }
     }
